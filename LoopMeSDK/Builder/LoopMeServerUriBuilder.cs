@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 using System.Text;
+using Windows.Graphics.Display;
 
 namespace LoopMeSDK.Builder
 {
@@ -38,6 +40,12 @@ namespace LoopMeSDK.Builder
             return finalUri; 
         }
 
+        private static string RequestParameterForLanguage()
+        {
+            var languages = Windows.Globalization.ApplicationLanguages.Languages;
+            return String.Format("&lng={0}", languages[0]);
+        }
+
         private static string RequestParameterForDNT()
         {
             throw new NotImplementedException();
@@ -55,20 +63,18 @@ namespace LoopMeSDK.Builder
 
         private static string RequestParameterForTimeZone()
         {
-            throw new NotImplementedException();
+            //TODO: check 
+             return String.Format("&tz={0}", TimeZoneInfo.Local.BaseUtcOffset);
         }
 
         private static string RequestParameterForOrientation()
         {
-            throw new NotImplementedException();
+            DisplayOrientations orientation = DisplayInformation.GetForCurrentView().CurrentOrientation;
+            string orientString = orientation == DisplayOrientations.Landscape || orientation == DisplayOrientations.LandscapeFlipped ? INTERFACE_ORIENTATION_LANDSCAPE : INTERFACE_ORIENTATION_PORTRAIT; 
+            return String.Format("&or={0}", orientString); 
         }
 
         private static string RequestParameterForApplicationVersion()
-        {
-            throw new NotImplementedException();
-        }
-
-        private static string RequestParameterForLanguage()
         {
             throw new NotImplementedException();
         }
