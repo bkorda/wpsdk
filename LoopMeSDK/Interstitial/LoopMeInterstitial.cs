@@ -18,7 +18,7 @@ namespace LoopMeSDK.Interstitial
            this.AppKey = appKey;
         }
 
-        public ~LoopMeInterstitial()
+        ~LoopMeInterstitial()
         {
 
         }

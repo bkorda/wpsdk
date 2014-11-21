@@ -1,0 +1,17 @@
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\LoopMeSDK.csprojResolveAssemblyReference.cache
+D:\Work\LoopMeSDK\LoopMeSDK\bin\Debug\LoopMeSDK.dll
+D:\Work\LoopMeSDK\LoopMeSDK\bin\Debug\LoopMeSDK.pdb
+D:\Work\LoopMeSDK\LoopMeSDK\bin\Debug\LoopMeSDK.pri
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\LoopMeSDK.dll
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\LoopMeSDK.pdb
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\priconfig.xml
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\priconfig.xml.intermediate
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\layout.resfiles
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\layout.resfiles.intermediate
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\resources.resfiles
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\resources.resfiles.intermediate
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\pri.resfiles
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\pri.resfiles.intermediate
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\qualifiers.txt
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\qualifiers.txt.intermediate
+D:\Work\LoopMeSDK\LoopMeSDK\obj\Debug\MultipleQualifiersPerDimensionFound.txt
