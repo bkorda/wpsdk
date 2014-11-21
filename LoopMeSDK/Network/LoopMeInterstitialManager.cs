@@ -1,6 +1,7 @@
 ﻿using LoopMeSDK.Builder;
 using System;
-
+using Windows.UI.Xaml.Controls;
+using LoopMeSDK.View;
 namespace LoopMeSDK.Network
 {
     class LoopMeInterstitialManager
@@ -52,6 +53,11 @@ namespace LoopMeSDK.Network
                 else
                     LoadWithUri(LoopMeServerUriBuilder.BuildUri(appkey, testMode, TestServerUri));
             }
+        }
+         
+        public void PresentInterstitialFromFrame(Frame frame)
+        {
+            frame.Navigate(typeof(LoopMeInterstitialPage));
         }
         #endregion
     }
