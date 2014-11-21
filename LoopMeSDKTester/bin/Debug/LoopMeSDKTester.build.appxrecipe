@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PC-BOKO</Machine>
+    <WindowsUser>boko</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0c467613-6d17-4bbc-86d0-aa09016ff5a7</PackageIdentityName>
+    <IntermediateOutputPath>D:\Work\LoopMeSDK\LoopMeSDKTester\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\LoopMeSDKTester.exe">
+      <PackagePath>LoopMeSDKTester.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDK\bin\Debug\LoopMeSDK.dll">
+      <PackagePath>LoopMeSDK.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\PivotPage.xbf">
+      <PackagePath>PivotPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDK\bin\Debug\View\LoopMeInterstitialPage.xbf">
+      <PackagePath>LoopMeSDK\View\LoopMeInterstitialPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\LoopMeSDKTester.xr.xml">
+      <PackagePath>LoopMeSDKTester.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDK\bin\Debug\LoopMeSDK.xr.xml">
+      <PackagePath>LoopMeSDK\LoopMeSDK.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Work\LoopMeSDK\LoopMeSDKTester\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

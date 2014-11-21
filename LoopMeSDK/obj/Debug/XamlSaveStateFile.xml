@@ -1,5 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+    <LocalAssembly PathName="d:\work\loopmesdk\loopmesdk\obj\debug\intermediatexaml\loopmesdk.dll" HashGuid="940c46b5-c027-7cf5-0332-dce344ea8890" />
     <ReferenceAssembly PathName="c:\program files (x86)\reference assemblies\microsoft\framework\.netportable\v4.6\profile\profile32\mscorlib.dll" HashGuid="95b3d13b-e7bf-e4c5-4c77-8abe05a06981" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

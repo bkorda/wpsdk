@@ -1,13 +1,12 @@
 ﻿using LoopMeSDK.Network;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LoopMeSDK.Interstitial
 {
-    class LoopMeInterstitial
+    public class LoopMeInterstitial
     {
-        private static List<LoopMeInterstitial> _sharedInterstitials;
-
-        private LoopMeInterstitialManager manager;
+        private LoopMeInterstitialManager _manager;
 
         public string AppKey { get; private set; }
         public bool IsReady { get; private set; }
@@ -16,6 +15,7 @@ namespace LoopMeSDK.Interstitial
         public LoopMeInterstitial(string appKey) 
         {
            this.AppKey = appKey;
+           _manager = new LoopMeInterstitialManager();
         }
 
         ~LoopMeInterstitial()
@@ -23,9 +23,9 @@ namespace LoopMeSDK.Interstitial
 
         }
 
-        public void LoadAd()
+        public async Task LoadAd()
         {
-
+            await _manager.LoadInterstitialAsync(AppKey, true);
         }
     }
 }

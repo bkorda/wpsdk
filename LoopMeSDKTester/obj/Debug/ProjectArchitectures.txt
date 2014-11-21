@@ -1,0 +1,2 @@
+D:\Work\LoopMeSDK\LoopMeSDK\LoopMeSDK.csproj;neutral
+D:\Work\LoopMeSDK\LoopMeSDKTester\LoopMeSDKTester.csproj;neutral

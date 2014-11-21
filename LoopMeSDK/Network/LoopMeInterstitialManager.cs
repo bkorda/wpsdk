@@ -2,10 +2,14 @@
 using System;
 using Windows.UI.Xaml.Controls;
 using LoopMeSDK.View;
+using System.Threading.Tasks;
+
 namespace LoopMeSDK.Network
 {
     class LoopMeInterstitialManager
     {
+        private LoopMeServerCommunicator _communicator;
+        
         public bool IsReady {set; get; } 
         public bool IsLoading { set; get; }
         public bool IsDisplayed { get; set; }
@@ -16,18 +20,22 @@ namespace LoopMeSDK.Network
         #endregion
 
         #region Events
-        protected virtual void OnInterstitialLoaded(EventArgs e)
+        protected virtual void OnInterstitialLoaded()
         {
             EventHandler handler = InterstitialLoaded;
             if (handler != null)
             {
-                handler(this, e);
+                handler(this, EventArgs.Empty);
             }
         }
         #endregion
 
+        public LoopMeInterstitialManager()
+        {
+            _communicator = new LoopMeServerCommunicator();
+        }
         #region Private
-        private void LoadWithUri(Uri uri)
+        private async Task LoadWithUriAsync(Uri uri)
         {
             if (this.IsLoading)
             {
@@ -35,23 +43,23 @@ namespace LoopMeSDK.Network
             }
 
             this.IsLoading = true;
-
+            await _communicator.LoadUri(uri);
         }
         #endregion
 
         #region Public
-        public void LoadInterstitial(string appkey, bool testMode)
+        public async Task LoadInterstitialAsync(string appkey, bool testMode)
         {
             if (this.IsReady)
             {
-                OnInterstitialLoaded(EventArgs.Empty);
+                OnInterstitialLoaded();
             }
             else
             {
                 if (String.IsNullOrEmpty(TestServerUri))
-                    LoadWithUri(LoopMeServerUriBuilder.BuildUri(appkey, testMode));
+                   await LoadWithUriAsync(LoopMeServerUriBuilder.BuildUri(appkey, testMode));
                 else
-                    LoadWithUri(LoopMeServerUriBuilder.BuildUri(appkey, testMode, TestServerUri));
+                   await LoadWithUriAsync(LoopMeServerUriBuilder.BuildUri(appkey, testMode, TestServerUri));
             }
         }
          
